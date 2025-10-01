@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "removeComments": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

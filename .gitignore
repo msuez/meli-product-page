@@ -1,0 +1,9 @@
+/.vscode
+
+/web/.env
+/web/node_modules
+
+/api/.env
+/api/dist
+/api/coverage
+/api/node_modules

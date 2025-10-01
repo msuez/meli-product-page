@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: meli-api
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./api:/app
+    env_file:
+      - ./api/.env
+    networks:
+      - meli-net
+
+networks:
+  meli-net:
+    driver: bridge
