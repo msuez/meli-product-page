@@ -9,7 +9,7 @@ module.exports = {
     testMatch: ["**/tests/**/*.test.ts"],
     moduleFileExtensions: ["ts", "js", "json", "node"],
     coverageDirectory: "coverage",
-    collectCoverageFrom: ["src/**/*.ts", "!src/**/index.ts", "!src/config/**"],
+    collectCoverageFrom: ["src/**/*.ts", "!src/**/index.ts"],
     transform: {
         "^.+\\.ts$": ["ts-jest", { tsconfig: "tsconfig.test.json" }]
     },
