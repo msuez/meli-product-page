@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Estilos base MercadoLibre */
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+  --color-primary: #3483fa;
+  --color-success: #00a650;
+  --color-warning: #ffe600;
+  --color-secondary: #666666;
+  --color-border: #e5e7eb;
+  --color-background-page: #ededed;
+  --color-badge-bestseller: #f57733;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
