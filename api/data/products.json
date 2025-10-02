@@ -1,29 +1,352 @@
-{
-  "id": "a55-5g",
-  "title": "Samsung Galaxy A55 5G Dual SIM 256 GB Azul Oscuro 8 GB RAM",
-  "price": 439,
-  "currency": "USD",
-  "pictures": ["/images/a55/front.png", "/images/a55/back.png"],
-  "stock": 150,
-  "seller": {
-    "id": "seller-123",
-    "name": "Samsung Store",
-    "sales": 5000,
-    "reputation": "platinum"
+[
+  {
+    "id": "a55-5g",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy A55 5G Dual SIM 256 GB Azul Oscuro 8 GB RAM",
+    "price": 439,
+    "currency": "USD",
+    "pictures": ["/images/a55/front.png", "/images/a55/back.png"],
+    "stock": 150,
+    "seller": {
+      "id": "seller-123",
+      "brand": "Samsung",
+      "name": "Samsung Store",
+      "sales": 5000,
+      "reputation": "platinum"
+    },
+    "attributes": {
+      "screen_size": "6.6\"",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "main_camera": "50 MP",
+      "front_camera": "32 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard", "AMEX", "OCA"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 3
+    },
+    "rating": 4.5,
+    "reviews_count": 795,
+    "description": "Con su potente procesador y 8 GB de RAM, este dispositivo logra un alto rendimiento y almacenamiento amplio de 256 GB.",
+    "condition": "Nuevo",
+    "sold_quantity": 500,
+    "best_seller": true
   },
-  "attributes": {
-    "screen_size": "6.6\"",
-    "ram": "8 GB",
-    "storage": "256 GB",
-    "main_camera": "50 MP",
-    "front_camera": "32 MP",
-    "nfc": true
+  {
+    "id": "s24-ultra",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy S24 Ultra 512 GB Titanium Gray 12 GB RAM",
+    "price": 1199,
+    "currency": "USD",
+    "pictures": ["/images/s24/front.png", "/images/s24/back.png"],
+    "stock": 80,
+    "seller": {
+      "id": "seller-123",
+      "brand": "Samsung",
+      "name": "Samsung Store",
+      "sales": 5000,
+      "reputation": "platinum"
+    },
+    "attributes": {
+      "screen_size": "6.8\"",
+      "ram": "12 GB",
+      "storage": "512 GB",
+      "main_camera": "200 MP",
+      "front_camera": "40 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 2
+    },
+    "rating": 4.8,
+    "reviews_count": 1520,
+    "description": "El nuevo Galaxy S24 Ultra con cámara de 200 MP redefine la fotografía móvil.",
+    "condition": "Nuevo",
+    "sold_quantity": 1200,
+    "best_seller": true
   },
-  "payment_methods": ["VISA", "Mastercard", "AMEX", "OCA"],
-  "shipping": {
-    "free_shipping": true,
-    "estimated_days": 3
+  {
+    "id": "iphone15-pro",
+    "brand": "Apple",
+    "title": "Apple iPhone 15 Pro 256 GB Azul Titanio 8 GB RAM",
+    "price": 1099,
+    "currency": "USD",
+    "pictures": ["/images/iphone15/front.png", "/images/iphone15/back.png"],
+    "stock": 120,
+    "seller": {
+      "id": "apple-001",
+      "brand": "Apple",
+      "name": "Apple Store",
+      "sales": 8000,
+      "reputation": "platinum"
+    },
+    "attributes": {
+      "screen_size": "6.1\"",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "main_camera": "48 MP",
+      "front_camera": "12 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 4
+    },
+    "rating": 4.7,
+    "reviews_count": 2050,
+    "description": "iPhone 15 Pro con chip A17 Pro y cuerpo de titanio ultraligero.",
+    "condition": "Nuevo",
+    "sold_quantity": 2000,
+    "best_seller": true
   },
-  "rating": 4.5,
-  "reviews_count": 795
-}
+  {
+    "id": "moto-edge50",
+    "brand": "Motorola",
+    "title": "Motorola Edge 50 Fusion 256 GB Azul Atlántico 8 GB RAM",
+    "price": 419,
+    "currency": "USD",
+    "pictures": ["/images/edge50/front.png", "/images/edge50/back.png"],
+    "stock": 200,
+    "seller": {
+      "id": "moto-001",
+      "brand": "Motorola",
+      "name": "Motorola Official",
+      "sales": 3000,
+      "reputation": "gold"
+    },
+    "attributes": {
+      "screen_size": "6.7\"",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "main_camera": "50 MP",
+      "front_camera": "32 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 5
+    },
+    "rating": 4.4,
+    "reviews_count": 450,
+    "description": "Un smartphone con diseño elegante y batería de larga duración.",
+    "condition": "Nuevo",
+    "sold_quantity": 900,
+    "best_seller": false
+  },
+  {
+    "id": "a15-5g",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy A15 5G 128 GB Negro 6 GB RAM",
+    "price": 326,
+    "currency": "USD",
+    "pictures": ["/images/a15/front.png", "/images/a15/back.png"],
+    "stock": 300,
+    "seller": {
+      "id": "seller-123",
+      "brand": "Samsung",
+      "name": "Samsung Store",
+      "sales": 5000,
+      "reputation": "platinum"
+    },
+    "attributes": {
+      "screen_size": "6.5\"",
+      "ram": "6 GB",
+      "storage": "128 GB",
+      "main_camera": "50 MP",
+      "front_camera": "13 MP",
+      "nfc": false
+    },
+    "payment_methods": ["VISA", "Mastercard", "OCA"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 6
+    },
+    "rating": 4.3,
+    "reviews_count": 320,
+    "description": "El Galaxy A15 5G es una opción asequible con buenas prestaciones y diseño moderno.",
+    "condition": "Nuevo",
+    "sold_quantity": 300,
+    "best_seller": false
+  },
+  {
+    "id": "s23-plus",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy S23 Plus 256 GB Negro 8 GB RAM",
+    "price": 999,
+    "currency": "USD",
+    "pictures": ["/images/s23/front.png", "/images/s23/back.png"],
+    "stock": 100,
+    "seller": {
+      "id": "seller-123",
+      "brand": "Samsung",
+      "name": "Samsung Store",
+      "sales": 5000,
+      "reputation": "platinum"
+    },
+    "attributes": {
+      "screen_size": "6.6\"",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "main_camera": "50 MP",
+      "front_camera": "12 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 3
+    },
+    "rating": 4.6,
+    "reviews_count": 980,
+    "description": "El Galaxy S23 Plus combina potencia y diseño premium en un dispositivo confiable.",
+    "condition": "Nuevo",
+    "sold_quantity": 850,
+    "best_seller": false
+  },
+  {
+    "id": "xiaomi-13t",
+    "brand": "Xiaomi",
+    "title": "Xiaomi 13T Pro 512 GB Verde 12 GB RAM",
+    "price": 699,
+    "currency": "USD",
+    "pictures": ["/images/xiaomi13/front.png", "/images/xiaomi13/back.png"],
+    "stock": 90,
+    "seller": {
+      "id": "xiaomi-001",
+      "brand": "Xiaomi",
+      "name": "Xiaomi Official",
+      "sales": 4000,
+      "reputation": "gold"
+    },
+    "attributes": {
+      "screen_size": "6.67\"",
+      "ram": "12 GB",
+      "storage": "512 GB",
+      "main_camera": "108 MP",
+      "front_camera": "20 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 7
+    },
+    "rating": 4.5,
+    "reviews_count": 600,
+    "description": "El Xiaomi 13T Pro ofrece rendimiento excepcional y carga ultra rápida.",
+    "condition": "Nuevo",
+    "sold_quantity": 500,
+    "best_seller": false
+  },
+  {
+    "id": "pixel-8",
+    "brand": "Google",
+    "title": "Google Pixel 8 128 GB Negro 8 GB RAM",
+    "price": 699,
+    "currency": "USD",
+    "pictures": ["/images/pixel8/front.png", "/images/pixel8/back.png"],
+    "stock": 110,
+    "seller": {
+      "id": "google-001",
+      "brand": "Google",
+      "name": "Google Store",
+      "sales": 2000,
+      "reputation": "gold"
+    },
+    "attributes": {
+      "screen_size": "6.2\"",
+      "ram": "8 GB",
+      "storage": "128 GB",
+      "main_camera": "50 MP",
+      "front_camera": "10.5 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 4
+    },
+    "rating": 4.6,
+    "reviews_count": 870,
+    "description": "Google Pixel 8 con fotografía computacional y actualizaciones directas de Android.",
+    "condition": "Nuevo",
+    "sold_quantity": 750,
+    "best_seller": false
+  },
+  {
+    "id": "redmi-note13",
+    "brand": "Xiaomi",
+    "title": "Xiaomi Redmi Note 13 Pro 256 GB Azul 8 GB RAM",
+    "price": 399,
+    "currency": "USD",
+    "pictures": ["/images/note13/front.png", "/images/note13/back.png"],
+    "stock": 250,
+    "seller": {
+      "id": "xiaomi-001",
+      "brand": "Xiaomi",
+      "name": "Xiaomi Official",
+      "sales": 4000,
+      "reputation": "gold"
+    },
+    "attributes": {
+      "screen_size": "6.67\"",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "main_camera": "100 MP",
+      "front_camera": "16 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 5
+    },
+    "rating": 4.4,
+    "reviews_count": 410,
+    "description": "Un smartphone con gran relación calidad-precio y pantalla AMOLED.",
+    "condition": "Nuevo",
+    "sold_quantity": 600,
+    "best_seller": false
+  },
+  {
+    "id": "oneplus-12",
+    "brand": "OnePlus",
+    "title": "OnePlus 12 256 GB Verde 12 GB RAM",
+    "price": 749,
+    "currency": "USD",
+    "pictures": ["/images/oneplus12/front.png", "/images/oneplus12/back.png"],
+    "stock": 95,
+    "seller": {
+      "id": "oneplus-001",
+      "brand": "OnePlus",
+      "name": "OnePlus Official",
+      "sales": 1800,
+      "reputation": "gold"
+    },
+    "attributes": {
+      "screen_size": "6.82\"",
+      "ram": "12 GB",
+      "storage": "256 GB",
+      "main_camera": "50 MP",
+      "front_camera": "32 MP",
+      "nfc": true
+    },
+    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "shipping": {
+      "free_shipping": true,
+      "estimated_days": 6
+    },
+    "rating": 4.5,
+    "reviews_count": 530,
+    "description": "El OnePlus 12 combina potencia con OxygenOS para una experiencia fluida.",
+    "condition": "Nuevo",
+    "sold_quantity": 400,
+    "best_seller": false
+  }
+]
