@@ -2,7 +2,8 @@ import {
     Router,
 } from 'express';
 
-import { PingRoutes } from '../routes/ping.route';
+import { PingRoutes } from './ping.route';
+import { ItemsRoutes } from './items.route';
 
 export class AppRoutes {
 
@@ -11,6 +12,7 @@ export class AppRoutes {
         const router = Router();
 
         router.use('/ping', PingRoutes.routes);
+        router.use('/items', ItemsRoutes.routes);
 
         return router;
     }
