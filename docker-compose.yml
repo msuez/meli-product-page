@@ -10,8 +10,28 @@ services:
       - "4000:4000"
     volumes:
       - ./api:/app
+      - /app/node_modules
     env_file:
       - ./api/.env
+    command: npm run dev
+    networks:
+      - meli-net
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: meli-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    env_file:
+      - ./web/.env
+    command: npm run dev
+    depends_on:
+      - api
     networks:
       - meli-net
 
