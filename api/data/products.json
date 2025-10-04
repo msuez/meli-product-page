@@ -4,349 +4,527 @@
     "brand": "Samsung",
     "title": "Samsung Galaxy A55 5G Dual SIM 256 GB Azul Oscuro 8 GB RAM",
     "price": 439,
+    "originalPrice": 499,
+    "discount": 12,
+    "installments": "10 cuotas de $43.9 sin interés",
     "currency": "USD",
     "pictures": ["/images/a55/front.png", "/images/a55/back.png"],
     "stock": 150,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "seller-123",
       "brand": "Samsung",
       "name": "Samsung Store",
       "sales": 5000,
-      "reputation": "platinum"
+      "reputation": "platinum",
+      "logo": "/logos/samsung.png"
     },
     "attributes": {
-      "screen_size": "6.6\"",
+      "screenSize": "6.6\"",
       "ram": "8 GB",
       "storage": "256 GB",
-      "main_camera": "50 MP",
-      "front_camera": "32 MP",
+      "mainCamera": "50 MP",
+      "frontCamera": "32 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard", "AMEX", "OCA"],
+    "paymentMethods": [
+      "VISA",
+      "Mastercard",
+      "AMEX",
+      "OCA",
+      "Redpagos",
+      "Abitab"
+    ],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 3
+      "freeShipping": true,
+      "estimatedDays": 3
     },
     "rating": 4.5,
-    "reviews_count": 795,
-    "description": "Con su potente procesador y 8 GB de RAM, este dispositivo logra un alto rendimiento y almacenamiento amplio de 256 GB.",
+    "reviewsCount": 795,
+    "description": "El Samsung Galaxy A55 5G es uno de los smartphones más completos dentro de la gama media-alta de Samsung, pensado para usuarios que buscan equilibrio entre diseño, potencia y autonomía. Con una pantalla Super AMOLED de 6.6 pulgadas y resolución Full HD+, ofrece colores vibrantes, excelente contraste y una tasa de refresco de 120 Hz, ideal para disfrutar de videos, juegos y navegación fluida.\n\nEn su interior integra un procesador Exynos de última generación acompañado de 8 GB de RAM, lo que garantiza un rendimiento fluido incluso en multitarea exigente. Sus 256 GB de almacenamiento interno permiten guardar miles de fotos, aplicaciones y videos, ampliables mediante tarjeta microSD.\n\nEn el apartado fotográfico, el A55 5G incorpora una cámara principal de 50 MP con estabilización óptica (OIS), acompañada de sensores ultra gran angular y macro, que permiten capturar imágenes nítidas en diferentes escenarios. La cámara frontal de 32 MP asegura selfies de gran calidad y videollamadas claras.\n\nAdemás, este modelo cuenta con conectividad 5G para descargas ultrarrápidas, batería de 5000 mAh con carga rápida de 25 W, y resistencia al agua y polvo con certificación IP67. Incluye sensor de huella en pantalla, reconocimiento facial y soporte para Samsung Knox, garantizando mayor seguridad.\n\nEn definitiva, el Galaxy A55 5G combina un diseño elegante en color Azul Oscuro, gran autonomía y un rendimiento sólido, convirtiéndose en una opción ideal para quienes buscan un dispositivo moderno, duradero y con características premium a un precio competitivo.",
     "condition": "Nuevo",
-    "sold_quantity": 500,
-    "best_seller": true
+    "soldQuantity": 500,
+    "bestSeller": true,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Memoria RAM: 8 GB",
+      "Dispositivo desbloqueado para que elijas tu compañía telefónica preferida.",
+      "Memoria interna de 256 GB"
+    ],
+    "color": {
+      "name": "Azul oscuro",
+      "value": "#0d47a1"
+    }
   },
   {
     "id": "s24-ultra",
     "brand": "Samsung",
     "title": "Samsung Galaxy S24 Ultra 512 GB Titanium Gray 12 GB RAM",
     "price": 1199,
+    "originalPrice": 1349,
+    "discount": 11,
+    "installments": "12 cuotas de $99.9 sin interés",
     "currency": "USD",
     "pictures": ["/images/s24/front.png", "/images/s24/back.png"],
     "stock": 80,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "seller-123",
       "brand": "Samsung",
       "name": "Samsung Store",
       "sales": 5000,
-      "reputation": "platinum"
+      "reputation": "platinum",
+      "logo": "/logos/samsung.png"
     },
     "attributes": {
-      "screen_size": "6.8\"",
+      "screenSize": "6.8\"",
       "ram": "12 GB",
       "storage": "512 GB",
-      "main_camera": "200 MP",
-      "front_camera": "40 MP",
+      "mainCamera": "200 MP",
+      "frontCamera": "40 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "paymentMethods": [
+      "VISA",
+      "Mastercard",
+      "AMEX",
+      "OCA",
+      "Redpagos",
+      "Abitab"
+    ],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 2
+      "freeShipping": true,
+      "estimatedDays": 2
     },
     "rating": 4.8,
-    "reviews_count": 1520,
-    "description": "El nuevo Galaxy S24 Ultra con cámara de 200 MP redefine la fotografía móvil.",
+    "reviewsCount": 1520,
+    "description": "El Samsung Galaxy S24 Ultra es el buque insignia de la marca surcoreana...",
     "condition": "Nuevo",
-    "sold_quantity": 1200,
-    "best_seller": true
+    "soldQuantity": 1200,
+    "bestSeller": true,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Memoria RAM: 12 GB",
+      "Cámara principal de 200 MP",
+      "Pantalla Dynamic AMOLED 2X de 6.8\""
+    ],
+    "color": {
+      "name": "Titanium Gray",
+      "value": "#757575"
+    }
   },
   {
     "id": "iphone15-pro",
     "brand": "Apple",
     "title": "Apple iPhone 15 Pro 256 GB Azul Titanio 8 GB RAM",
     "price": 1099,
+    "originalPrice": 1299,
+    "discount": 15,
+    "installments": "12 cuotas de $91.5 sin interés",
     "currency": "USD",
     "pictures": ["/images/iphone15/front.png", "/images/iphone15/back.png"],
     "stock": 120,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "apple-001",
       "brand": "Apple",
       "name": "Apple Store",
       "sales": 8000,
-      "reputation": "platinum"
+      "reputation": "platinum",
+      "logo": "/logos/apple.png"
     },
     "attributes": {
-      "screen_size": "6.1\"",
+      "screenSize": "6.1\"",
       "ram": "8 GB",
       "storage": "256 GB",
-      "main_camera": "48 MP",
-      "front_camera": "12 MP",
+      "mainCamera": "48 MP",
+      "frontCamera": "12 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "paymentMethods": [
+      "VISA",
+      "Mastercard",
+      "AMEX",
+      "OCA",
+      "Redpagos",
+      "Abitab"
+    ],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 4
+      "freeShipping": true,
+      "estimatedDays": 4
     },
     "rating": 4.7,
-    "reviews_count": 2050,
-    "description": "iPhone 15 Pro con chip A17 Pro y cuerpo de titanio ultraligero.",
+    "reviewsCount": 2050,
+    "description": "El iPhone 15 Pro es la propuesta más avanzada de Apple...",
     "condition": "Nuevo",
-    "sold_quantity": 2000,
-    "best_seller": true
+    "soldQuantity": 2000,
+    "bestSeller": true,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Chip A17 Pro",
+      "Diseño en titanio",
+      "Pantalla Super Retina XDR 6.1\""
+    ],
+    "color": {
+      "name": "Azul Titanio",
+      "value": "#1c3d5a"
+    }
   },
   {
     "id": "moto-edge50",
     "brand": "Motorola",
     "title": "Motorola Edge 50 Fusion 256 GB Azul Atlántico 8 GB RAM",
     "price": 419,
+    "originalPrice": 459,
+    "discount": 9,
+    "installments": "10 cuotas de $41.9 sin interés",
     "currency": "USD",
     "pictures": ["/images/edge50/front.png", "/images/edge50/back.png"],
     "stock": 200,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "moto-001",
       "brand": "Motorola",
       "name": "Motorola Official",
       "sales": 3000,
-      "reputation": "gold"
+      "reputation": "gold",
+      "logo": "/logos/motorola.png"
     },
     "attributes": {
-      "screen_size": "6.7\"",
+      "screenSize": "6.7\"",
       "ram": "8 GB",
       "storage": "256 GB",
-      "main_camera": "50 MP",
-      "front_camera": "32 MP",
+      "mainCamera": "50 MP",
+      "frontCamera": "32 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard"],
+    "paymentMethods": [
+      "VISA",
+      "Mastercard",
+      "AMEX",
+      "OCA",
+      "Redpagos",
+      "Abitab"
+    ],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 5
+      "freeShipping": true,
+      "estimatedDays": 5
     },
     "rating": 4.4,
-    "reviews_count": 450,
-    "description": "Un smartphone con diseño elegante y batería de larga duración.",
+    "reviewsCount": 450,
+    "description": "El Motorola Edge 50 Fusion es una de las apuestas más equilibradas de Motorola, pensado para quienes buscan un dispositivo con diseño atractivo, gran pantalla y un precio competitivo. Con su acabado en color Azul Atlántico y bordes curvos, ofrece una estética moderna y ergonómica que facilita su uso con una sola mano.\n\nSu pantalla pOLED de 6.7 pulgadas con resolución Full HD+ y tasa de refresco de 144 Hz garantiza fluidez en cada interacción, desde redes sociales hasta juegos. Además, incluye compatibilidad con HDR10+, lo que asegura imágenes más detalladas y realistas al visualizar películas o series.\n\nEn términos de rendimiento, integra un procesador Qualcomm Snapdragon 7s Gen 2 acompañado de 8 GB de RAM, ofreciendo un desempeño óptimo tanto en multitarea como en aplicaciones exigentes. Los 256 GB de almacenamiento interno proporcionan espacio suficiente para guardar fotos, videos y aplicaciones sin preocuparse por el límite.\n\nLa cámara principal de 50 MP con estabilización óptica, junto al sensor ultra gran angular y la cámara frontal de 32 MP, permite capturar fotos y selfies de gran calidad en diferentes condiciones de luz. Motorola añade funciones potenciadas por inteligencia artificial para optimizar escenas automáticamente.\n\nEn cuanto a autonomía, equipa una batería de 5000 mAh con carga rápida TurboPower de 68 W, capaz de recuperar horas de uso en pocos minutos de carga. Además, incluye resistencia al agua con certificación IP68.\n\nCon un balance ideal entre potencia, diseño y experiencia multimedia, el Edge 50 Fusion se presenta como una opción destacada dentro de la gama media premium.",
     "condition": "Nuevo",
-    "sold_quantity": 900,
-    "best_seller": false
+    "soldQuantity": 900,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Memoria RAM: 8 GB",
+      "Pantalla pOLED 6.7'' 144 Hz",
+      "Batería 5000 mAh con carga rápida 68 W"
+    ],
+    "color": {
+      "name": "Azul Atlántico",
+      "value": "#003366"
+    }
   },
   {
     "id": "a15-5g",
     "brand": "Samsung",
     "title": "Samsung Galaxy A15 5G 128 GB Negro 6 GB RAM",
     "price": 326,
+    "originalPrice": 349,
+    "discount": 7,
+    "installments": "10 cuotas de $32.6 sin interés",
     "currency": "USD",
     "pictures": ["/images/a15/front.png", "/images/a15/back.png"],
     "stock": 300,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "seller-123",
       "brand": "Samsung",
       "name": "Samsung Store",
       "sales": 5000,
-      "reputation": "platinum"
+      "reputation": "platinum",
+      "logo": "/logos/samsung.png"
     },
     "attributes": {
-      "screen_size": "6.5\"",
+      "screenSize": "6.5\"",
       "ram": "6 GB",
       "storage": "128 GB",
-      "main_camera": "50 MP",
-      "front_camera": "13 MP",
+      "mainCamera": "50 MP",
+      "frontCamera": "13 MP",
       "nfc": false
     },
-    "payment_methods": ["VISA", "Mastercard", "OCA"],
+    "paymentMethods": ["VISA", "Mastercard", "OCA", "Redpagos", "Abitab"],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 6
+      "freeShipping": true,
+      "estimatedDays": 6
     },
     "rating": 4.3,
-    "reviews_count": 320,
-    "description": "El Galaxy A15 5G es una opción asequible con buenas prestaciones y diseño moderno.",
+    "reviewsCount": 320,
+    "description": "El Samsung Galaxy A15 5G es un smartphone pensado para quienes buscan un equilibrio entre precio accesible y características modernas. Su pantalla Super AMOLED de 6.5 pulgadas con resolución Full HD+ y tasa de refresco de 90 Hz garantiza colores vivos y una experiencia fluida en redes sociales, navegación o juegos casuales. Gracias a su diseño delgado y acabado mate, ofrece una estética elegante y cómoda al tacto.\n\nIncorpora un procesador MediaTek Dimensity 6100+ que, junto a sus 6 GB de RAM, asegura un rendimiento sólido en multitarea y aplicaciones cotidianas. Además, con 128 GB de almacenamiento interno ampliables mediante microSD, hay espacio suficiente para fotos, aplicaciones y archivos.\n\nEn el apartado fotográfico, cuenta con una cámara principal de 50 MP acompañada por sensores adicionales que permiten capturar retratos con efecto bokeh y tomas más detalladas. La cámara frontal de 13 MP es ideal para selfies nítidos y videollamadas claras. Aunque no incluye NFC, destaca por ofrecer compatibilidad con redes 5G, lo que lo convierte en una excelente opción para quienes buscan conectividad rápida a bajo costo.\n\nSu batería de 5000 mAh con carga rápida de 25 W proporciona autonomía para todo el día, incluso con uso intensivo. Además, Samsung mantiene la experiencia de software limpia y segura gracias a One UI, garantizando actualizaciones frecuentes y funciones intuitivas.\n\nEn definitiva, el Galaxy A15 5G es un dispositivo confiable y asequible, diseñado para quienes desean un smartphone moderno, con buen desempeño y características de última generación en conectividad.",
     "condition": "Nuevo",
-    "sold_quantity": 300,
-    "best_seller": false
+    "soldQuantity": 300,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Memoria RAM: 6 GB",
+      "Pantalla Super AMOLED 6.5'' 90 Hz",
+      "Batería 5000 mAh con carga rápida 25 W"
+    ],
+    "color": {
+      "name": "Negro",
+      "value": "#000000"
+    }
   },
   {
     "id": "s23-plus",
     "brand": "Samsung",
     "title": "Samsung Galaxy S23 Plus 256 GB Negro 8 GB RAM",
     "price": 999,
+    "originalPrice": 1099,
+    "discount": 9,
+    "installments": "12 cuotas de $83.2 sin interés",
     "currency": "USD",
     "pictures": ["/images/s23/front.png", "/images/s23/back.png"],
     "stock": 100,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "seller-123",
       "brand": "Samsung",
       "name": "Samsung Store",
       "sales": 5000,
-      "reputation": "platinum"
+      "reputation": "platinum",
+      "logo": "/logos/samsung.png"
     },
     "attributes": {
-      "screen_size": "6.6\"",
+      "screenSize": "6.6\"",
       "ram": "8 GB",
       "storage": "256 GB",
-      "main_camera": "50 MP",
-      "front_camera": "12 MP",
+      "mainCamera": "50 MP",
+      "frontCamera": "12 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "paymentMethods": ["VISA", "Mastercard", "AMEX"],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 3
+      "freeShipping": true,
+      "estimatedDays": 3
     },
     "rating": 4.6,
-    "reviews_count": 980,
-    "description": "El Galaxy S23 Plus combina potencia y diseño premium en un dispositivo confiable.",
+    "reviewsCount": 980,
+    "description": "El Samsung Galaxy S23 Plus combina potencia, diseño premium y un ecosistema completo de funciones avanzadas. Su pantalla Dynamic AMOLED 2X de 6.6 pulgadas ofrece resolución Full HD+ con tasa de refresco adaptativa de 120 Hz, HDR10+ y brillo máximo de hasta 1750 nits, lo que lo convierte en uno de los paneles más brillantes y nítidos del mercado. Su diseño refinado en cristal y aluminio Armor lo hace elegante y resistente a la vez, con certificación IP68 contra agua y polvo.\n\nEl dispositivo está impulsado por el procesador Qualcomm Snapdragon 8 Gen 2 optimizado para Galaxy, que brinda un rendimiento excepcional en juegos, aplicaciones exigentes y multitarea intensiva. Acompañado de 8 GB de RAM y 256 GB de almacenamiento interno, asegura fluidez y capacidad más que suficiente para usuarios avanzados.\n\nEn fotografía, el S23 Plus equipa un sistema de cámaras versátil con un sensor principal de 50 MP con estabilización óptica, un ultra gran angular de 12 MP y un teleobjetivo de 10 MP con zoom óptico 3x. Además, permite grabación de video en 8K a 30 fps o 4K a 60 fps, junto a una cámara frontal de 12 MP con autofocus para selfies de gran calidad.\n\nSu batería de 4700 mAh incluye carga rápida de 45 W, carga inalámbrica de 15 W y Wireless PowerShare para cargar accesorios como auriculares o relojes. En software, corre One UI 5.1 sobre Android 13, ofreciendo personalización y seguridad mejoradas.\n\nEl Galaxy S23 Plus es ideal para quienes desean un smartphone premium con pantalla inmersiva, gran autonomía y un rendimiento que se adapta a las necesidades más exigentes.",
     "condition": "Nuevo",
-    "sold_quantity": 850,
-    "best_seller": false
+    "soldQuantity": 850,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Memoria RAM: 8 GB",
+      "Pantalla Dynamic AMOLED 6.6'' 120 Hz",
+      "Procesador Snapdragon 8 Gen 2"
+    ],
+    "color": {
+      "name": "Negro",
+      "value": "#000000"
+    }
   },
   {
     "id": "xiaomi-13t",
     "brand": "Xiaomi",
     "title": "Xiaomi 13T Pro 512 GB Verde 12 GB RAM",
     "price": 699,
+    "originalPrice": 799,
+    "discount": 12,
+    "installments": "12 cuotas de $58.2 sin interés",
     "currency": "USD",
     "pictures": ["/images/xiaomi13/front.png", "/images/xiaomi13/back.png"],
     "stock": 90,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "xiaomi-001",
       "brand": "Xiaomi",
       "name": "Xiaomi Official",
       "sales": 4000,
-      "reputation": "gold"
+      "reputation": "gold",
+      "logo": "/logos/xiaomi.png"
     },
     "attributes": {
-      "screen_size": "6.67\"",
+      "screenSize": "6.67\"",
       "ram": "12 GB",
       "storage": "512 GB",
-      "main_camera": "108 MP",
-      "front_camera": "20 MP",
+      "mainCamera": "108 MP",
+      "frontCamera": "20 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard"],
+    "paymentMethods": ["VISA", "Mastercard"],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 7
+      "freeShipping": true,
+      "estimatedDays": 7
     },
     "rating": 4.5,
-    "reviews_count": 600,
-    "description": "El Xiaomi 13T Pro ofrece rendimiento excepcional y carga ultra rápida.",
+    "reviewsCount": 600,
+    "description": "El Xiaomi 13T Pro se presenta como uno de los smartphones más competitivos dentro de la gama alta asequible, ofreciendo un conjunto de características que rivalizan con marcas tradicionales a un precio más accesible. Su pantalla AMOLED CrystalRes de 6.67 pulgadas ofrece resolución 1.5K (2712 x 1220 píxeles), tasa de refresco de 144 Hz y compatibilidad con HDR10+, lo que garantiza una experiencia visual vibrante y fluida tanto en juegos como en streaming de contenido.\n\nEstá impulsado por el procesador MediaTek Dimensity 9200+, fabricado en 4 nm, que junto a sus 12 GB de RAM asegura un rendimiento sobresaliente incluso en tareas exigentes como edición de video o videojuegos de última generación. Además, con 512 GB de almacenamiento interno UFS 4.0, ofrece gran velocidad de lectura y escritura, con espacio más que suficiente para aplicaciones, fotos y archivos pesados.\n\nSu sistema de cámaras está firmado en colaboración con Leica, destacando el sensor principal de 108 MP con estabilización óptica, acompañado de un ultra gran angular de 12 MP y un teleobjetivo de 50 MP, permitiendo un rango fotográfico versátil. La cámara frontal de 20 MP asegura selfies de alta calidad y videollamadas nítidas.\n\nLa batería de 5000 mAh incluye carga ultrarrápida de 120 W HyperCharge, capaz de cargar el dispositivo al 100% en menos de 20 minutos, lo que lo convierte en uno de los teléfonos más veloces en este apartado. También ofrece conectividad completa con 5G, Wi-Fi 6E y NFC.\n\nEl Xiaomi 13T Pro es ideal para quienes buscan un smartphone premium con pantalla fluida, cámaras potentes y carga ultrarrápida, a un precio competitivo frente a la competencia.",
     "condition": "Nuevo",
-    "sold_quantity": 500,
-    "best_seller": false
+    "soldQuantity": 500,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Pantalla AMOLED 6.67'' 144 Hz",
+      "Procesador MediaTek Dimensity 9200+",
+      "Cámara Leica 108 MP + batería 5000 mAh"
+    ],
+    "color": {
+      "name": "Verde",
+      "value": "#006400"
+    }
   },
   {
     "id": "pixel-8",
     "brand": "Google",
     "title": "Google Pixel 8 128 GB Negro 8 GB RAM",
     "price": 699,
+    "originalPrice": 749,
+    "discount": 7,
+    "installments": "12 cuotas de $58.2 sin interés",
     "currency": "USD",
     "pictures": ["/images/pixel8/front.png", "/images/pixel8/back.png"],
     "stock": 110,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "google-001",
       "brand": "Google",
       "name": "Google Store",
       "sales": 2000,
-      "reputation": "gold"
+      "reputation": "gold",
+      "logo": "/logos/google.png"
     },
     "attributes": {
-      "screen_size": "6.2\"",
+      "screenSize": "6.2\"",
       "ram": "8 GB",
       "storage": "128 GB",
-      "main_camera": "50 MP",
-      "front_camera": "10.5 MP",
+      "mainCamera": "50 MP",
+      "frontCamera": "10.5 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "paymentMethods": ["VISA", "Mastercard", "AMEX"],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 4
+      "freeShipping": true,
+      "estimatedDays": 4
     },
     "rating": 4.6,
-    "reviews_count": 870,
-    "description": "Google Pixel 8 con fotografía computacional y actualizaciones directas de Android.",
+    "reviewsCount": 870,
+    "description": "El Google Pixel 8 es el smartphone que redefine la experiencia Android, combinando hardware eficiente con la mejor integración de software y fotografía computacional. Su pantalla Actua Display de 6.2 pulgadas OLED ofrece resolución Full HD+ y tasa de refresco adaptativa de hasta 120 Hz, con brillo máximo de 2000 nits, lo que asegura visibilidad incluso bajo luz solar directa.\n\nEstá equipado con el procesador Google Tensor G3, diseñado específicamente para potenciar la inteligencia artificial y el aprendizaje automático. Esto se traduce en funciones únicas como la edición mágica de fotos, el borrado de ruido en grabaciones de voz y mejoras de seguridad con el chip Titan M2. Sus 8 GB de RAM y 128 GB de almacenamiento garantizan fluidez para multitarea y suficiente espacio para el día a día.\n\nEn el apartado fotográfico, incorpora un sensor principal de 50 MP con tecnología Quad Bayer, un ultra gran angular de 12 MP y una cámara frontal de 10.5 MP. El Pixel 8 destaca especialmente en fotografía nocturna y en el procesamiento de retratos gracias a su software, que sigue siendo referencia en la industria. Además, ofrece grabación de video en 4K con HDR a 60 fps.\n\nLa batería de 4575 mAh permite una autonomía sólida para un día completo, con carga rápida de 27 W y carga inalámbrica de 18 W. Google promete al menos 7 años de actualizaciones de Android y seguridad, lo que asegura un dispositivo vigente a largo plazo.\n\nEl Pixel 8 es la opción perfecta para usuarios que priorizan la experiencia de software, la fotografía de alta calidad y las actualizaciones constantes de Android directamente desde Google.",
     "condition": "Nuevo",
-    "sold_quantity": 750,
-    "best_seller": false
+    "soldQuantity": 750,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Pantalla OLED 6.2'' 120 Hz",
+      "Procesador Google Tensor G3",
+      "7 años de actualizaciones garantizadas"
+    ],
+    "color": {
+      "name": "Negro",
+      "value": "#000000"
+    }
   },
   {
     "id": "redmi-note13",
     "brand": "Xiaomi",
     "title": "Xiaomi Redmi Note 13 Pro 256 GB Azul 8 GB RAM",
     "price": 399,
+    "originalPrice": 449,
+    "discount": 11,
+    "installments": "10 cuotas de $39.9 sin interés",
     "currency": "USD",
     "pictures": ["/images/note13/front.png", "/images/note13/back.png"],
     "stock": 250,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "xiaomi-001",
       "brand": "Xiaomi",
       "name": "Xiaomi Official",
       "sales": 4000,
-      "reputation": "gold"
+      "reputation": "gold",
+      "logo": "/logos/xiaomi.png"
     },
     "attributes": {
-      "screen_size": "6.67\"",
+      "screenSize": "6.67\"",
       "ram": "8 GB",
       "storage": "256 GB",
-      "main_camera": "100 MP",
-      "front_camera": "16 MP",
+      "mainCamera": "100 MP",
+      "frontCamera": "16 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard"],
+    "paymentMethods": ["VISA", "Mastercard"],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 5
+      "freeShipping": true,
+      "estimatedDays": 5
     },
     "rating": 4.4,
-    "reviews_count": 410,
-    "description": "Un smartphone con gran relación calidad-precio y pantalla AMOLED.",
+    "reviewsCount": 410,
+    "description": "El Xiaomi Redmi Note 13 Pro se posiciona como uno de los smartphones más atractivos de la gama media gracias a su equilibrio entre rendimiento, cámaras y precio accesible. Incluye una pantalla AMOLED de 6.67 pulgadas con resolución Full HD+, tasa de refresco de 120 Hz y brillo máximo de 1800 nits, ideal para visualizar contenido con gran nitidez y fluidez.\n\nSu procesador Qualcomm Snapdragon 7s Gen 2, junto con 8 GB de RAM, proporciona un rendimiento más que suficiente para multitarea, aplicaciones exigentes y videojuegos casuales. Los 256 GB de almacenamiento interno permiten guardar miles de fotos, videos y aplicaciones sin preocuparse por la falta de espacio.\n\nEl apartado fotográfico es uno de sus puntos más fuertes: integra una cámara principal de 100 MP con estabilización óptica de imagen (OIS), que captura fotos detalladas incluso en condiciones de poca luz. Se complementa con un ultra gran angular de 8 MP y un macro de 2 MP, mientras que la cámara frontal de 16 MP es perfecta para selfies y videollamadas de calidad.\n\nLa batería de 5100 mAh garantiza hasta dos días de autonomía con uso moderado y soporta carga rápida de 67 W, capaz de llevar el dispositivo al 100% en menos de 45 minutos. Incluye NFC, lector de huellas en pantalla y altavoces estéreo.\n\nEl Redmi Note 13 Pro es ideal para quienes buscan un teléfono confiable, con gran cámara y batería de larga duración, sin pagar el precio de un gama alta.",
     "condition": "Nuevo",
-    "sold_quantity": 600,
-    "best_seller": false
+    "soldQuantity": 600,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Pantalla AMOLED 6.67'' 120 Hz",
+      "Cámara principal 100 MP con OIS",
+      "Batería 5100 mAh con carga rápida 67 W"
+    ],
+    "color": {
+      "name": "Azul",
+      "value": "#0000ff"
+    }
   },
   {
     "id": "oneplus-12",
     "brand": "OnePlus",
     "title": "OnePlus 12 256 GB Verde 12 GB RAM",
     "price": 749,
+    "originalPrice": 829,
+    "discount": 10,
+    "installments": "12 cuotas de $62.4 sin interés",
     "currency": "USD",
     "pictures": ["/images/oneplus12/front.png", "/images/oneplus12/back.png"],
     "stock": 95,
+    "category": "Celulares y Smartphones",
     "seller": {
       "id": "oneplus-001",
       "brand": "OnePlus",
       "name": "OnePlus Official",
       "sales": 1800,
-      "reputation": "gold"
+      "reputation": "gold",
+      "logo": "/logos/oneplus.png"
     },
     "attributes": {
-      "screen_size": "6.82\"",
+      "screenSize": "6.82\"",
       "ram": "12 GB",
       "storage": "256 GB",
-      "main_camera": "50 MP",
-      "front_camera": "32 MP",
+      "mainCamera": "50 MP",
+      "frontCamera": "32 MP",
       "nfc": true
     },
-    "payment_methods": ["VISA", "Mastercard", "AMEX"],
+    "paymentMethods": ["VISA", "Mastercard", "AMEX"],
     "shipping": {
-      "free_shipping": true,
-      "estimated_days": 6
+      "freeShipping": true,
+      "estimatedDays": 6
     },
     "rating": 4.5,
-    "reviews_count": 530,
-    "description": "El OnePlus 12 combina potencia con OxygenOS para una experiencia fluida.",
+    "reviewsCount": 530,
+    "description": "El OnePlus 12 es un smartphone de gama alta que combina diseño premium, potencia bruta y una de las mejores experiencias de software gracias a OxygenOS. Cuenta con una pantalla AMOLED LTPO de 6.82 pulgadas con resolución QHD+, tasa de refresco adaptativa de 1-120 Hz y brillo máximo de 4500 nits, lo que asegura una calidad visual impresionante tanto en exteriores como en consumo multimedia.\n\nEn su interior integra el procesador Qualcomm Snapdragon 8 Gen 3, acompañado de 12 GB de RAM LPDDR5X y 256 GB de almacenamiento UFS 4.0. Esta configuración lo convierte en uno de los dispositivos más rápidos del mercado, perfecto para gaming, edición de video y tareas de alto rendimiento.\n\nEl sistema de cámaras, desarrollado en colaboración con Hasselblad, incluye un sensor principal de 50 MP con OIS, un ultra gran angular de 48 MP y un teleobjetivo periscópico de 64 MP con zoom óptico de 3x. La cámara frontal de 32 MP asegura selfies detallados y videollamadas claras. Gracias al procesado de imagen de OnePlus, las fotos tienen colores más naturales y un rango dinámico sobresaliente.\n\nLa batería de 5400 mAh con carga rápida de 100 W (y 50 W inalámbrica) asegura un día completo de autonomía con apenas 25 minutos de carga. Incluye conectividad 5G, Wi-Fi 7, NFC y resistencia IP65 contra agua y polvo.\n\nEl OnePlus 12 es un teléfono dirigido a quienes buscan lo último en tecnología móvil, con un diseño elegante y un ecosistema optimizado, capaz de competir cara a cara con los modelos más avanzados de Samsung y Apple.",
     "condition": "Nuevo",
-    "sold_quantity": 400,
-    "best_seller": false
+    "soldQuantity": 400,
+    "bestSeller": false,
+    "promo": "10% OFF OCA Blue Visa",
+    "attributesPreview": [
+      "Pantalla AMOLED LTPO 6.82'' QHD+",
+      "Procesador Snapdragon 8 Gen 3",
+      "Carga rápida 100 W / inalámbrica 50 W"
+    ],
+    "color": {
+      "name": "Verde",
+      "value": "#228b22"
+    }
   }
 ]
