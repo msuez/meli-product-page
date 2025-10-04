@@ -32,9 +32,8 @@ export default function RootLayout({
             >
                 <nav className="bg-warning h-14 flex items-center px-6 shadow">
                     <div className="flex items-center gap-3">
-                        {/* Logo ML */}
                         <Image
-                            src="/meli_logo.svg"   // 📌 guardá el logo aquí: /public/logo-ml.png
+                            src="/meli_logo.svg"
                             alt="MercadoLibre"
                             width={40}
                             height={40}

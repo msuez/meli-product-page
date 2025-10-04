@@ -12,12 +12,18 @@ export interface Product {
     category: string;
     description: string;
     attributes: Record<string, string | boolean>;
-    payment_methods: string[];
+    paymentMethods: string[];
     shipping: Shipping;
     seller: Seller;
     rating: number;
-    reviews_count: number;
+    reviewsCount: number;
     condition: "Nuevo" | "Usado" | "Reacondicionado";
-    sold_quantity: number;
-    best_seller: boolean;
+    soldQuantity: number;
+    bestSeller: boolean;
+    originalPrice: number;
+    discount: number;
+    installments: string;
+    promo: string;
+    color: { name: string; value: string };
+    attributesPreview: string[];
 }
