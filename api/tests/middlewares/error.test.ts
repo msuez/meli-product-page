@@ -1,10 +1,10 @@
-import { errorHandler } from "../../src/middlewares/error";
-import { CustomError, NotFoundError } from "../../src/errors";
-import { Request, Response } from "express";
+import { errorHandler } from '../../src/middlewares/error';
+import { CustomError, NotFoundError } from '../../src/errors';
+import { Request, Response } from 'express';
 
-describe("errorHandler", () => {
-    it("should handle CustomError", () => {
-        const err = new NotFoundError("Not found");
+describe('errorHandler', () => {
+    it('should handle CustomError', () => {
+        const err = new NotFoundError('Not found');
         const req = {} as Request;
         const res = {
             status: jest.fn().mockReturnThis(),
@@ -15,12 +15,12 @@ describe("errorHandler", () => {
         expect(res.status).toHaveBeenCalledWith(404);
         expect(res.json).toHaveBeenCalledWith({
             statusCode: 404,
-            message: "Not found",
+            message: 'Not found',
         });
     });
 
-    it("should handle generic Error", () => {
-        const err = new Error("Unexpected");
+    it('should handle generic Error', () => {
+        const err = new Error('Unexpected');
         const req = {} as Request;
         const res = {
             status: jest.fn().mockReturnThis(),
@@ -31,7 +31,7 @@ describe("errorHandler", () => {
         expect(res.status).toHaveBeenCalledWith(500);
         expect(res.json).toHaveBeenCalledWith({
             statusCode: 500,
-            message: "Internal Server Error",
+            message: 'Internal Server Error',
         });
     });
 });
