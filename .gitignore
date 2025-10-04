@@ -1,4 +1,5 @@
 /.vscode
+/.DS_Store
 
 /web/.env
 /web/node_modules
