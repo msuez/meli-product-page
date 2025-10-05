@@ -13,6 +13,16 @@ const customJestConfig = {
     },
     testPathIgnorePatterns: ['/node_modules/', '/.next/', '/tests/e2e/'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+
+    collectCoverage: true,
+    coverageDirectory: 'coverage',
+    collectCoverageFrom: [
+        'src/**/*.{ts,tsx}',
+        '!src/**/*.d.ts',
+        '!src/**/index.{ts,tsx}',
+        '!src/types/**',
+        '!src/tests/**',
+    ],
 };
 
 module.exports = createJestConfig(customJestConfig);

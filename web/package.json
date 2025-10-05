@@ -10,6 +10,7 @@
     "test": "jest --passWithNoTests",
     "test:unit": "jest --passWithNoTests",
     "test:unit:watch": "jest --passWithNoTests --watchAll",
+    "test:coverage": "jest --coverage --runInBand",
     "test:e2e": "playwright test"
   },
   "dependencies": {

@@ -15,20 +15,20 @@ jobs:
                 working-directory: ./api
 
         steps:
-            - name: 🧩 Checkout repository
+            - name: Checkout repository
               uses: actions/checkout@v4
 
-            - name: ⚙️ Setup Node.js
+            - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: 22
                   cache: "npm"
                   cache-dependency-path: ./api/package-lock.json
 
-            - name: 📦 Install dependencies
+            - name: Install dependencies
               run: npm ci
 
-            - name: 🧪 Run API tests with coverage
+            - name: Run API tests with coverage
               run: npm run test:coverage
 
     web-unit-tests:
@@ -39,24 +39,24 @@ jobs:
                 working-directory: ./web
 
         steps:
-            - name: 🧩 Checkout repository
+            - name: Checkout repository
               uses: actions/checkout@v4
 
-            - name: ⚙️ Setup Node.js
+            - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: 22
                   cache: "npm"
                   cache-dependency-path: ./web/package-lock.json
 
-            - name: 📦 Install dependencies
+            - name: Install dependencies
               run: npm ci
 
-            - name: 🧪 Run Jest unit tests
-              run: npm run test -- --ci --runInBand
+            - name: Run Jest unit tests
+              run: npm run test:coverage
 
-            - name: ⬆️ Upload Jest coverage report
-              if: success()
+            - name: Upload Jest coverage report
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                   name: jest-coverage-report
@@ -71,34 +71,37 @@ jobs:
                 working-directory: ./web
 
         steps:
-            - name: 🧩 Checkout repository
+            - name: Checkout repository
               uses: actions/checkout@v4
 
-            - name: ⚙️ Setup Node.js
+            - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
                   node-version: 22
                   cache: "npm"
-                  cache-dependency-path: ./web/package-lock.json
 
-            - name: 📦 Install dependencies
+            - name: Install root dependencies
               run: npm ci
 
-            - name: 🎭 Install Playwright browsers
-              run: npx playwright install --with-deps
+            - name: Install web dependencies
+              run: cd web && npm ci
 
-            - name: 🏗️ Build web app
-              run: npm run build
+            - name: Install API dependencies (including devDependencies)
+              run: cd api && npm ci --include=dev
 
-            - name: 🚀 Start web app in background
+            - name: Install Playwright browsers
+              run: cd web && npx playwright install --with-deps
+
+            - name: Start web and API servers in background
               run: |
-                  npm run start &
-                  npx wait-on http://localhost:3000
+                  cd api && npm run dev &
+                  cd web && npm run build && npm run start &
+                  sleep 10
 
-            - name: 🧪 Run Playwright E2E tests
-              run: npx playwright test --reporter=dot
+            - name: Run Playwright E2E tests
+              run: cd web && npx playwright test --reporter=dot
 
-            - name: ⬆️ Upload Playwright report (if failed)
+            - name: Upload Playwright report (if failed)
               if: failure()
               uses: actions/upload-artifact@v4
               with:
