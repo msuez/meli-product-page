@@ -8,10 +8,11 @@ on:
 
 jobs:
     web-e2e-tests:
+        name: Web E2E Tests (Playwright)
         runs-on: ubuntu-latest
         defaults:
             run:
-                working-directory: ./web
+                shell: bash
 
         steps:
             - name: Checkout repository
@@ -22,26 +23,35 @@ jobs:
               with:
                   node-version: 22
                   cache: "npm"
+                  cache-dependency-path: |
+                      ./api/package-lock.json
+                      ./web/package-lock.json
 
             - name: Install API dependencies
               working-directory: ./api
               run: npm ci
 
             - name: Install Web dependencies
+              working-directory: ./web
               run: npm ci
 
             - name: Install Playwright browsers
+              working-directory: ./web
               run: npx playwright install --with-deps
 
             - name: Build web app
+              working-directory: ./web
               run: npm run build
 
-            - name: Start web app in background
+            - name: Start API and Web servers
               run: |
-                  npm run start &
+                  cd api && npm run dev &
+                  cd web && npm run start &
+                  npx wait-on http://localhost:4000/ping
                   npx wait-on http://localhost:3000
 
             - name: Run Playwright E2E tests
+              working-directory: ./web
               run: npx playwright test --reporter=dot
 
             - name: Upload Playwright report (if failed)
