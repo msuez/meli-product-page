@@ -44,17 +44,6 @@ jobs:
               working-directory: ./web
               run: npx playwright install --with-deps
 
-            - name: Build web app
-              working-directory: ./web
-              run: npm run build
-
-            - name: Start API and Web servers
-              run: |
-                  cd api && PORT=$API_PORT npm run dev &
-                  cd web && PORT=$WEB_PORT npm run start &
-                  npx wait-on http://localhost:$API_PORT/ping
-                  npx wait-on http://localhost:$WEB_PORT
-
             - name: Run Playwright E2E tests
               working-directory: ./web
               run: npx playwright test --reporter=dot
