@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "jest --passWithNoTests",
-    "test:unit": "jest --passWithNoTests --watchAll",
+    "test:unit": "jest --passWithNoTests",
+    "test:unit:watch": "jest --passWithNoTests --watchAll",
     "test:e2e": "playwright test"
   },
   "dependencies": {

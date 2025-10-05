@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import SellerBox from '@/components/product/seller/SellerBox';
 import ProductSpecs from '@/components/product/details/ProductSpecs';
 import ProductGallery from '@/components/product/gallery/ProductGallery';
@@ -40,21 +41,32 @@ export default function ProductDesktopLayout({
                 funda samsung a54 - samsung galaxy - celulares - samsung s54
             </div>
 
+            {/* Breadcrumb */}
             <div className="hidden md:flex justify-between items-center text-sm mb-6">
                 <div className="flex items-center gap-1">
-                    <a href="/" className="text-primary hover:underline">Volver al listado</a>
+                    <Link href="/" className="text-primary hover:underline">
+                        Volver al listado
+                    </Link>
                     <span className="text-secondary">{'>'}</span>
-                    <a href="/" className="text-primary hover:underline">Celulares y Telefonía</a>
+                    <Link href="/" className="text-primary hover:underline">
+                        Celulares y Telefonía
+                    </Link>
                     <span className="text-secondary">{'>'}</span>
-                    <a href="/" className="text-primary hover:underline">Celulares y Smartphones</a>
+                    <Link href="/" className="text-primary hover:underline">
+                        Celulares y Smartphones
+                    </Link>
                     <span className="text-secondary">{'>'}</span>
                     <span className="text-primary">{product.brand}</span>
                 </div>
 
                 <div className="flex gap-4 text-primary">
-                    <a href="#" className="hover:underline">Vender uno igual</a>
+                    <Link href="#" className="hover:underline">
+                        Vender uno igual
+                    </Link>
                     <span className="text-secondary">|</span>
-                    <a href="#" className="hover:underline">Compartir</a>
+                    <Link href="#" className="hover:underline">
+                        Compartir
+                    </Link>
                 </div>
             </div>
 
@@ -72,6 +84,7 @@ export default function ProductDesktopLayout({
                                         sellerName={product.seller.name}
                                         sellerLogo={product.seller.logo}
                                     />
+
                                     <div className="flex items-center justify-between">
                                         <ProductStatus
                                             condition={product.condition}
@@ -91,10 +104,7 @@ export default function ProductDesktopLayout({
                                         {product.title}
                                     </h1>
 
-                                    <ProductRating
-                                        rating={product.rating}
-                                        reviews={product.reviewsCount}
-                                    />
+                                    <ProductRating rating={product.rating} reviews={product.reviewsCount} />
 
                                     <div data-testid="product-price">
                                         <ProductPrice
