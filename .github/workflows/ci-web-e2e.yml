@@ -14,11 +14,6 @@ jobs:
             run:
                 shell: bash
 
-        env:
-            API_PORT: 4000
-            WEB_PORT: 3000
-            NODE_ENV: test
-
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
