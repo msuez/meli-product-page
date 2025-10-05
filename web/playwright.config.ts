@@ -14,11 +14,15 @@ export default defineConfig({
 
     webServer: [
         {
-            command: 'PORT=4000 npm run dev',
+            command: 'npm run dev',
             cwd: '../api',
             url: 'http://localhost:4000/ping',
             reuseExistingServer: !process.env.CI,
             timeout: 120 * 1000,
+            env: {
+                PORT: '4000',
+                NODE_ENV: 'test',
+            },
         },
         {
             command: 'PORT=3000 npm run dev',
