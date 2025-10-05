@@ -14,6 +14,11 @@ jobs:
             run:
                 shell: bash
 
+        env:
+            API_PORT: 4000
+            WEB_PORT: 3000
+            NODE_ENV: test
+
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
@@ -45,10 +50,10 @@ jobs:
 
             - name: Start API and Web servers
               run: |
-                  cd api && npm run dev &
-                  cd web && npm run start &
-                  npx wait-on http://localhost:4000/ping
-                  npx wait-on http://localhost:3000
+                  cd api && PORT=$API_PORT npm run dev &
+                  cd web && PORT=$WEB_PORT npm run start &
+                  npx wait-on http://localhost:$API_PORT/ping
+                  npx wait-on http://localhost:$WEB_PORT
 
             - name: Run Playwright E2E tests
               working-directory: ./web
