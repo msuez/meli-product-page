@@ -9,7 +9,6 @@ import ProductDescription from '@/components/product/details/ProductDescription'
 import RelatedProductsList from '@/components/product/recommendations/RelatedProductsList';
 import BrandProductsCarousel from '@/components/product/recommendations/BrandProductsCarousel';
 import RelatedProductsCarousel from '@/components/product/recommendations/RelatedProductCarousel';
-
 import ProductPurchaseOptions from '@/components/product/details/ProductPurchaseOptions';
 import ProductQuickFeatures from '@/components/product/details/ProductQuickFeatures';
 import ProductColor from '@/components/product/details/ProductColor';
@@ -19,7 +18,6 @@ import ProductBestSellerBadge from '@/components/product/details/ProductBestSell
 import ProductSellerInfo from '@/components/product/seller/ProductSellerInfo';
 import ProductStatus from '@/components/product/details/ProductStatus';
 import FavoriteButton from '@/components/ui/FavoriteButton';
-
 import { Product } from '@/types';
 
 interface ProductDesktopLayoutProps {
@@ -41,31 +39,22 @@ export default function ProductDesktopLayout({
                 <span className="font-semibold">También puede interesarte:</span>{' '}
                 funda samsung a54 - samsung galaxy - celulares - samsung s54
             </div>
+
             <div className="hidden md:flex justify-between items-center text-sm mb-6">
                 <div className="flex items-center gap-1">
-                    <a href="/" className="text-primary hover:underline">
-                        Volver al listado
-                    </a>
+                    <a href="/" className="text-primary hover:underline">Volver al listado</a>
                     <span className="text-secondary">{'>'}</span>
-                    <a href="/" className="text-primary hover:underline">
-                        Celulares y Telefonía
-                    </a>
+                    <a href="/" className="text-primary hover:underline">Celulares y Telefonía</a>
                     <span className="text-secondary">{'>'}</span>
-                    <a href="/" className="text-primary hover:underline">
-                        Celulares y Smartphones
-                    </a>
+                    <a href="/" className="text-primary hover:underline">Celulares y Smartphones</a>
                     <span className="text-secondary">{'>'}</span>
                     <span className="text-primary">{product.brand}</span>
                 </div>
 
                 <div className="flex gap-4 text-primary">
-                    <a href="#" className="hover:underline">
-                        Vender uno igual
-                    </a>
+                    <a href="#" className="hover:underline">Vender uno igual</a>
                     <span className="text-secondary">|</span>
-                    <a href="#" className="hover:underline">
-                        Compartir
-                    </a>
+                    <a href="#" className="hover:underline">Compartir</a>
                 </div>
             </div>
 
@@ -79,35 +68,55 @@ export default function ProductDesktopLayout({
 
                             <div className="col-span-12 lg:col-span-6">
                                 <div className="space-y-3 text-sm">
-                                    <ProductSellerInfo sellerName={product.seller.name} sellerLogo={product.seller.logo} />
+                                    <ProductSellerInfo
+                                        sellerName={product.seller.name}
+                                        sellerLogo={product.seller.logo}
+                                    />
                                     <div className="flex items-center justify-between">
-                                        <ProductStatus condition={product.condition} soldQuantity={product.soldQuantity} />
+                                        <ProductStatus
+                                            condition={product.condition}
+                                            soldQuantity={product.soldQuantity}
+                                        />
                                         <FavoriteButton />
                                     </div>
+
                                     {product.bestSeller && (
                                         <ProductBestSellerBadge rank={8} category="Celulares y Smartphones" />
                                     )}
-                                    <h1 className="text-xl font-semibold text-foreground">
+
+                                    <h1
+                                        data-testid="product-title"
+                                        className="text-xl font-semibold text-foreground"
+                                    >
                                         {product.title}
                                     </h1>
-                                    <ProductRating rating={product.rating} reviews={product.reviewsCount} />
-                                    <ProductPrice
-                                        price={product.price}
-                                        originalPrice={product.originalPrice}
-                                        discount={product.discount}
-                                        installments={product.installments}
-                                        promo={product.promo}
+
+                                    <ProductRating
+                                        rating={product.rating}
+                                        reviews={product.reviewsCount}
                                     />
-                                    {product.color && (
-                                        <ProductColor color={product.color} />
-                                    )}
+
+                                    <div data-testid="product-price">
+                                        <ProductPrice
+                                            price={product.price}
+                                            originalPrice={product.originalPrice}
+                                            discount={product.discount}
+                                            installments={product.installments}
+                                            promo={product.promo}
+                                        />
+                                    </div>
+
+                                    {product.color && <ProductColor color={product.color} />}
+
                                     {product.attributesPreview.length > 0 && (
                                         <ProductQuickFeatures attributes={product.attributesPreview} />
                                     )}
+
                                     <ProductPurchaseOptions price={product.price} />
                                 </div>
                             </div>
                         </div>
+
                         {relatedProducts && relatedProducts.length > 0 && (
                             <div className="mt-8">
                                 <hr className="mb-6 border-border w-full" />
@@ -118,6 +127,7 @@ export default function ProductDesktopLayout({
                                 </div>
                             </div>
                         )}
+
                         {filteredBrandProducts.length > 0 && (
                             <div className="mt-8">
                                 <hr className="mb-6 border-border w-full" />
@@ -131,15 +141,18 @@ export default function ProductDesktopLayout({
                                 </div>
                             </div>
                         )}
+
                         <div className="mt-8">
                             <hr className="mb-6 border-border" />
                             <ProductSpecs attributes={product.attributes} />
                         </div>
+
                         <div className="mt-8">
                             <hr className="mb-6 border-border" />
                             <ProductDescription description={product.description} />
                         </div>
                     </main>
+
                     <aside className="col-span-12 lg:col-span-4 space-y-6">
                         <ProductActions
                             stock={product.stock}
@@ -147,9 +160,7 @@ export default function ProductDesktopLayout({
                             seller={product.seller}
                         />
                         <SellerBox {...product.seller} />
-                        <PaymentMethods
-                            methods={product.paymentMethods}
-                        />
+                        <PaymentMethods methods={product.paymentMethods} />
                         <RelatedProductsList products={relatedProducts || []} />
                     </aside>
                 </div>

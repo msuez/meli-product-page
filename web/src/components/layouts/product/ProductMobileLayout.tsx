@@ -35,26 +35,27 @@ export default function ProductMobileLayout({
                     condition={product.condition}
                     soldQuantity={product.soldQuantity}
                 />
-                <ProductRating
-                    rating={product.rating}
-                    reviews={product.reviewsCount}
-                />
+                <ProductRating rating={product.rating} reviews={product.reviewsCount} />
             </div>
+
             {product.bestSeller && (
                 <div className="mb-1 scale-90 md:scale-100 origin-left leading-none">
-                    <ProductBestSellerBadge
-                        rank={8}
-                        category="Celulares y Smartphones"
-                    />
+                    <ProductBestSellerBadge rank={8} category="Celulares y Smartphones" />
                 </div>
             )}
-            <h1 className="text-base font-semibold text-foreground leading-snug mb-3">
+
+            <h1
+                data-testid="product-title"
+                className="text-base font-semibold text-foreground leading-snug mb-3"
+            >
                 {product.title}
             </h1>
+
             <div className="col-span-12 lg:col-span-6 mb-4">
                 <ProductGalleryCarousel pictures={product.pictures} />
             </div>
-            <div className="mb-4">
+
+            <div data-testid="product-price" className="mb-4">
                 <ProductPrice
                     price={product.price}
                     originalPrice={product.originalPrice}
@@ -63,6 +64,7 @@ export default function ProductMobileLayout({
                     promo={product.promo}
                 />
             </div>
+
             <div className="mb-6">
                 <ProductActions
                     stock={product.stock}
@@ -70,14 +72,17 @@ export default function ProductMobileLayout({
                     seller={product.seller}
                 />
             </div>
+
             {product.attributesPreview.length > 0 && (
                 <div className="mb-6">
                     <ProductQuickFeatures attributes={product.attributesPreview} />
                 </div>
             )}
+
             <div className="mb-6 mt-6">
                 <ProductSpecs attributes={product.attributes} />
             </div>
+
             {relatedProducts && relatedProducts.length > 0 && (
                 <div className="mt-8 mb-6">
                     <hr className="mb-6 border-border w-full" />
@@ -88,15 +93,19 @@ export default function ProductMobileLayout({
                     </div>
                 </div>
             )}
+
             <div className="mb-6">
                 <SellerBox {...product.seller} />
             </div>
+
             <div className="mb-6">
                 <ProductDescription description={product.description} />
             </div>
+
             <div className="mb-6">
                 <PaymentMethods methods={product.paymentMethods} />
             </div>
+
             {filteredBrandProducts.length > 0 && (
                 <div className="mt-8 mb-8">
                     <hr className="mb-6 border-border w-full" />
