@@ -25,9 +25,9 @@ export default function ProductGalleryCarousel({ pictures }: ProductGalleryCarou
                     key={pictures[current]}
                     src={pictures[current]}
                     alt={`product-${current}`}
-                    fill
+                    fill={true}
                     className="object-contain transition-transform duration-300 ease-in-out"
-                    priority
+                    priority={true}
                     fetchPriority="high"
                     sizes="100vw"
                 />

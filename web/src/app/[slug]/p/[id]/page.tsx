@@ -7,6 +7,9 @@ import { useRelatedProducts } from '@/hooks/useRelatedProduct';
 import ProductDesktopLayout from '@/components/layouts/product/ProductDesktopLayout';
 import ProductMobileLayout from '@/components/layouts/product/ProductMobileLayout';
 import { useDevice } from '@/hooks/useDevice';
+import ErrorProduct from '@/components/product/errors/ErrorProduct';
+import NotFoundProduct from '@/components/product/errors/NotFoundProduct';
+import ProductSkeleton from '@/components/product/skeleton/ProductSkeleton';
 
 export default function ProductPage({
     params,
@@ -14,44 +17,28 @@ export default function ProductPage({
     params: Promise<{ slug: string; id: string }>;
 }) {
     const { id } = use(params);
+
     const {
         data: product,
         isLoading: productLoading,
         error: productError,
     } = useProduct(id);
+
     const { data: relatedProducts } = useRelatedProducts(id);
     const { data: brandProducts } = useBrandProducts(product?.brand);
     const { isMobile, isReady } = useDevice();
 
-    if (productLoading || !isReady)
-        return (
-            <p
-                data-testid="loading-state"
-                className="text-center text-muted-foreground mt-8"
-            >
-                Loading product details...
-            </p>
-        );
+    if (productLoading || !isReady) {
+        return <ProductSkeleton />;
+    }
 
-    if (productError)
-        return (
-            <p
-                data-testid="error-state"
-                className="text-center text-destructive mt-8"
-            >
-                Error loading product.
-            </p>
-        );
+    if (productError) {
+        return <ErrorProduct />;
+    }
 
-    if (!product)
-        return (
-            <p
-                data-testid="not-found-state"
-                className="text-center text-muted-foreground mt-8"
-            >
-                No product found.
-            </p>
-        );
+    if (!product) {
+        return <NotFoundProduct />;
+    }
 
     const safeRelated = relatedProducts || [];
     const safeBrand = brandProducts || [];

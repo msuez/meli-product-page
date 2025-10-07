@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc -p tsconfig.build.json",
-    "test": "jest --config jest.config.js --passWithNoTests",
-    "test:watch": "jest --watch --config jest.config.js",
+    "test": "jest --verbose --config jest.config.js --passWithNoTests",
+    "test:watch": "jest --verbose --watchAll --config jest.config.js",
     "test:coverage": "jest --coverage --config jest.config.js"
   },
   "keywords": [],

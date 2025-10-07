@@ -1,6 +1,6 @@
 import { renderHookWithQueryClient } from '../../utils/renderHookWithQueryClient';
 import { flushPromises } from '../../utils/flushPromises';
-import { useBrandProducts } from '@/hooks/useBrandProducts';
+import { useBrandProducts, fetchBrandProducts } from '@/hooks/useBrandProducts';
 import { getProductsByBrand } from '@/services/products';
 import { mockProducts } from '../fixtures/products';
 
@@ -49,5 +49,10 @@ describe('useBrandProducts', () => {
         await flushPromises();
 
         expect(result.current.error).toEqual(error);
+    });
+
+    test('fetchBrandProducts returns empty array when no brand provided', async () => {
+        const result = await fetchBrandProducts(undefined);
+        expect(result).toEqual([]);
     });
 });

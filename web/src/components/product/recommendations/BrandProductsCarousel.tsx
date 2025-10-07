@@ -44,7 +44,7 @@ export default function BrandProductsCarousel({ products, brand }: BrandProducts
                                 <Image
                                     src={p.pictures[0]}
                                     alt={p.title}
-                                    fill
+                                    fill={true}
                                     sizes="120px"
                                     className="object-contain"
                                 />

@@ -44,7 +44,7 @@ export default function RelatedProductsCarousel({ products }: RelatedProductsCar
                                 <Image
                                     src={p.pictures[0]}
                                     alt={p.title}
-                                    fill
+                                    fill={true}
                                     sizes="160px"
                                     className="object-contain"
                                 />
