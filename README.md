@@ -56,4 +56,4 @@ Incluye tests unitarios y end-to-end (E2E), y puede ejecutarse con Docker o loca
 ## 🧑‍💻 Author
 
 **Matías Suez**  
-📧 [matisuez.com](https://matisuez.com)
+📧 [matisuez@gmail.com](mailto:matisuez@gmail.com)
