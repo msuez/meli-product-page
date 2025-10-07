@@ -33,13 +33,13 @@ export default function RootLayout({
                 <nav className="bg-warning h-14 flex items-center px-6 shadow">
                     <div className="flex items-center gap-3">
                         <Image
-                            src="/meli_logo.svg"
+                            src="/meli_logo.png"
                             alt="MercadoLibre"
-                            width={40}
-                            height={40}
+                            width={90}
+                            height={90}
                             priority
                         />
-                        <span className="text-sm font-medium">MercadoLibre Challenge</span>
+                        <span className="text-sm font-medium">(Challenge)</span>
                     </div>
                 </nav>
                 <ReactQueryProvider>{children}</ReactQueryProvider>
