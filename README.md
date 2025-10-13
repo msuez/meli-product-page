@@ -38,7 +38,7 @@ Incluye tests unitarios y end-to-end (E2E), y puede ejecutarse con Docker o loca
 
 ## ⚙️ Running the Project
 
-👉 See [**RUN.md**](./run.md) for full setup instructions:
+👉 See [**run.md**](./run.md) for full setup instructions:
 
 - Run via Docker
 - Local development (API + Web)
