@@ -104,4 +104,4 @@ Feel free to reach out if you have any questions or need further assistance!
 ## 🧑‍💻 Author
 
 **Matías Suez**  
-📧 [matisuez.com](https://matisuez.com)
+📧 [matisuez@gmail.com](mailto:matisuez@gmail.com)
